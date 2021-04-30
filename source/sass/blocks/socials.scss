@@ -1,0 +1,19 @@
+.socials__list {
+  display: flex;
+  width: 105px;
+  justify-content: space-between;
+  align-items: center;
+
+  @include onDesktop {
+    width: 160px;
+  }
+}
+
+.socials__icon {
+  fill: $white;
+  transition: fill $duration;
+
+  &:hover {
+    fill: $brown;
+  }
+}

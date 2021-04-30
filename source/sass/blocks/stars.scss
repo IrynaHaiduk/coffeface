@@ -1,0 +1,27 @@
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stars__item {
+  width: 14px;
+  height: 13px;
+  margin-right: 3px;
+  background: $white url("../img/icon-star.svg") no-repeat center;
+  background-size: cover;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @include onTablet {
+    width: 17px;
+    height: 17px;
+    margin-right: 4px;
+  }
+}
+
+.stars__item--inactive {
+  background-image: url("../img/icon-star-inactive.svg");
+}

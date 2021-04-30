@@ -1,0 +1,76 @@
+.tutorial-descr {
+  min-height: 673px;
+  height: auto;
+  padding-top: 57px;
+  padding-bottom: 57px;
+  background: $white url("../img/tutorial-descr-bg-mb.png") no-repeat center;
+  background-size: cover;
+
+  @include onTablet {
+    min-height: 400px;
+    background-image: url("../img/tutorial-descr-bg-dt.png");
+  }
+
+  @include onDesktop {
+    background-image: url("../img/tutorial-descr-bg-dt.png");
+    min-height: 533px;
+    padding-top: 125px;
+    /* padding-top: 64px; */
+  }
+}
+
+.tutorial-descr__title {
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 32px;
+
+  @include onTablet {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 49px;
+  }
+}
+
+.tutorial-descr__list {
+  /*   margin: 0 auto; */
+
+  @include onTablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @include onDesktop {
+    max-width: 1053px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+.tutorial-descr__item {
+  text-align: center;
+  margin-bottom: 32px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include onTablet {
+    margin-bottom: 0;
+  }
+}
+
+.tutorial-descr__img {
+  margin: 0 auto;
+  margin-bottom: 16px;
+  width: 86px;
+  height: 86px;
+
+  @include onDesktop {
+    width: 124px;
+    height: 124px;
+  }
+}

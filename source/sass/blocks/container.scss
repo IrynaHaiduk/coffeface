@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  min-width: 335px;
+
+  @include onMobile {
+    max-width: 460px;
+  }
+
+  @include onTablet {
+    max-width: 700px;
+  }
+
+  @include onDesktop {
+    max-width: 1320px;
+  }
+}

@@ -1,0 +1,99 @@
+.subscription {
+  min-height: 886px;
+  height: auto;
+  padding-top: 53px;
+  padding-bottom: 430px;
+  background: $peachy-pink url("../img/subscr-bg-mb.jpg") no-repeat center;
+  background-size: cover;
+
+  @include onDesktop {
+    background-image: url("../img/subscr-bg-dt.jpg");
+    min-height: 568px;
+    padding-top: 104px;
+    padding-bottom: 136px;
+  }
+}
+
+.subscription__wrapper {
+  @include onDesktop {
+    max-width: 736px;
+  }
+}
+
+.subscription__title {
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @include onTablet {
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+.subscription__text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 15px;
+
+  @include onTablet {
+    font-size: 22px;
+    line-height: 37px;
+    margin-bottom: 20px;
+  }
+}
+
+/* .subscription {
+  min-height: 386px;
+  height: auto;
+  padding-top: 55px;
+  background: $darkColor url("../images/subscription-bg-mb.jpg") no-repeat center;
+  background-size: cover;
+
+  @include onTablet {
+    background-image: url("../images/subscription-bg-tb.jpg");
+    min-height: 380px;
+    padding-top: 64px;
+  }
+
+  @include onDesktop {
+    background-image: url("../images/subscription-bg-dt.jpg");
+    min-height: 550px;
+    padding-top: 140px;
+  }
+
+  &__title {
+    @include title;
+    color: $whiteColor;
+    margin-bottom: 30px;
+
+    @include onTablet {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: center;
+    color: $whiteColor;
+    margin-bottom: 48px;
+
+    @include onTablet {
+      line-height: 27px;
+      margin-bottom: 66px;
+    }
+  }
+} */

@@ -1,0 +1,23 @@
+.top-header {
+  background-color: $black;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  @include onTablet {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    color: $white;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0em;
+
+    @include onTablet {
+      font-size: 12px;
+    }
+  }
+}

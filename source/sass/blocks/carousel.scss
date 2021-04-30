@@ -1,0 +1,90 @@
+.carousel {
+  padding-top: 58px;
+  padding-bottom: 69px;
+
+  @include onDesktop {
+    padding-top: 113px;
+    padding-bottom: 53px;
+  }
+
+  .slick-arrow {
+    width: 25px;
+    height: 8px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .slick-prev {
+    left: -40px;
+  }
+
+  .slick-next {
+    right: -40px;
+  }
+
+  /* the slides */
+  .slick-slide {
+    margin: 0 10px;
+  }
+  /* the parent */
+  .slick-list {
+    margin: 0;
+  }
+}
+
+.carousel__wrapper {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  min-width: 335px;
+  position: relative;
+  margin-bottom: 20px;
+
+  @include onMobile {
+    max-width: 460px;
+  }
+
+  @include onTablet {
+    max-width: 700px;
+    margin-bottom: 40px;
+  }
+
+  @include onDesktop {
+    max-width: 1330px;
+    margin-bottom: 75px;
+  }
+}
+
+.carousel__arrow {
+  width: 25px;
+  height: 8px;
+}
+
+.carousel__img {
+  width: 105px;
+  height: 105px;
+
+  @include onDesktop {
+    width: 213px;
+    height: 210px;
+  }
+}
+
+.carousel__title {
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @include onDesktop {
+    font-size: 40px;
+    line-height: 34px;
+    letter-spacing: -0.03em;
+    margin-bottom: 64px;
+  }
+}

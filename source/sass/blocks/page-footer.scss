@@ -1,0 +1,58 @@
+.page-footer {
+  background-color: $black;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+  @include onTablet {
+    padding-top: 41px;
+    padding-bottom: 21px;
+  }
+}
+
+.page-footer__logo {
+  margin-bottom: 28px;
+  display: block;
+
+  @include onDesktop {
+    margin-bottom: 0;
+
+    .logo__icon {
+      width: 180px;
+      height: 18px;
+    }
+  }
+}
+
+.page-footer__nav {
+  margin-bottom: 29px;
+}
+
+.page-footer__cards {
+  margin-bottom: 20px;
+
+  @include onDesktop {
+    margin-bottom: 31px;
+  }
+}
+
+.page-footer__container {
+  position: relative;
+}
+
+.page-footer__socials {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @include onDesktop {
+    position: relative;
+  }
+}
+
+.page-footer__wrapper {
+  @include onDesktop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 41px;
+  }
+}

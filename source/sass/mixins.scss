@@ -1,0 +1,176 @@
+@mixin onMobile {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin list {
+  list-style: none;
+}
+
+@mixin text-dec {
+  a {
+    text-decoration: none;
+  }
+}
+
+@mixin font-Arial($fsize, $lheight, $fweight: 400) {
+  font-family: "Arial", sans-serif;
+  font-size: $fsize;
+  line-height: $lheight;
+  font-weight: $fweight;
+}
+
+@mixin font-Oswald($fsize, $lheight, $fweight: 400) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: $fsize;
+  line-height: $lheight;
+  font-weight: $fweight;
+}
+
+@mixin text-style($color, $texttr: none) {
+  color: $color;
+  text-transform: $texttr;
+}
+
+@mixin push-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin btn {
+  display: block;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+@mixin btn-green($fsize: 16px, $lheight: 20px) {
+  @include btn;
+  background-color: $leaf;
+
+  @include font-Oswald($fsize, $lheight, $fweight: 400);
+  @include text-style($white, uppercase);
+
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@mixin btn-grey($fsize: 16px, $lheight: 20px) {
+  @include btn;
+  background-color: $light-grey;
+
+  @include font-Oswald($fsize, $lheight, $fweight: 400);
+  @include text-style($greyish-brown, uppercase);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@mixin link-text($hover, $active) {
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    opacity: $hover;
+  }
+
+  &:focus {
+    opacity: $hover;
+  }
+
+  &:active {
+    opacity: $active;
+  }
+}
+
+@mixin link-image($hover, $active) {
+  img {
+    cursor: pointer;
+
+    &:hover {
+      opacity: $hover;
+    }
+
+    &:focus {
+      opacity: $hover;
+    }
+
+    &:active {
+      opacity: $active;
+    }
+  }
+}
+
+@mixin link-svg($link, $hover, $active) {
+  cursor: pointer;
+  text-decoration: none;
+  fill: $link;
+
+  &:hover {
+    fill: $hover;
+  }
+
+  &:focus {
+    fill: $hover;
+  }
+
+  &:active {
+    fill-opacity: $active;
+  }
+}
+
+@mixin svg($link, $hover, $active) {
+  svg {
+    cursor: pointer;
+    text-decoration: none;
+    fill: $link;
+
+    &:hover {
+      fill-opacity: $hover;
+    }
+
+    &:focus {
+      fill-opacity: $hover;
+    }
+
+    &:active {
+      fill-opacity: $active;
+    }
+  }
+}
+
+@mixin link-btn($hover, $color: $white) {
+  &:hover {
+    background-color: $hover;
+  }
+
+  &:focus {
+    background-color: $hover;
+  }
+
+  &:active {
+    color: rgba($color, 0.3);
+  }
+}
+
+@mixin center {
+  text-align: center;
+}
+
+@mixin left {
+  text-align: left;
+}

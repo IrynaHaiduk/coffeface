@@ -1,0 +1,96 @@
+.main-nav__toggle {
+  font-size: 14px;
+  color: $black;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  @include onTablet {
+    display: none;
+  }
+}
+
+/* .main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: $white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 19px;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: $dark-grey2;
+  box-shadow: 0 8px 0 0 $dark-grey2, 0 16px 0 0 $dark-grey2;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 31px;
+    right: 20px;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: $dark-grey2;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--opened .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .site-list {
+    position: static;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+ */

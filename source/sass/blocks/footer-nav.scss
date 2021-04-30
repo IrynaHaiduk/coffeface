@@ -1,0 +1,41 @@
+.footer-nav {
+  @include onTablet {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  @include onDesktop {
+    width: 470px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-nav__list {
+  @include onTablet {
+    /*   width: 50%; */
+    /*  &:last-of-type {
+      text-align: right;
+    } */
+  }
+}
+
+.footer-nav__link {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  color: $white;
+  transition: color $duration;
+
+  &:hover {
+    color: $brown;
+  }
+
+  @include onDesktop {
+    font-size: 16px;
+    line-height: 38px;
+  }
+}

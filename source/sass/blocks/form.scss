@@ -1,0 +1,105 @@
+.form {
+  width: 335px;
+  margin: 0 auto;
+
+  @include onDesktop {
+    width: 518px;
+    display: flex;
+  }
+}
+
+.form__input {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  width: 100%;
+  outline: none;
+  height: 54px;
+  padding: 16px 20px 17px;
+  margin-bottom: 10px;
+  border: 1px solid $black;
+
+  &::placeholder {
+    font: inherit;
+    font-size: 14px;
+    color: rgba ($black, 0.5);
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+  }
+
+  @include onDesktop {
+    margin-bottom: 0;
+    height: 70px;
+    padding: 23px 21px 23px;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.form__button {
+  border: none;
+}
+
+/* .form {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @include onTablet {
+    width: 475px;
+  }
+
+  @include onDesktop {
+    width: 570px;
+  }
+
+  &__input {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+
+    outline: none;
+    height: 50px;
+    padding: 18px 30px;
+    flex-grow: 1;
+    max-width: 380px;
+
+    &::placeholder {
+    }
+
+    @include onTablet {
+      max-width: 395px;
+      height: 70px;
+    }
+
+    @include onDesktop {
+      max-width: 470px;
+    }
+  }
+
+  &__btn {
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    background: url("../images/arrow.svg") no-repeat center;
+    background-size: 15px 15px;
+    transition: background-color $duration;
+
+    &:hover {
+    }
+
+    @include onTablet {
+      width: 70px;
+      height: 70px;
+      background-size: 25px 25px;
+    }
+  }
+}
+ */

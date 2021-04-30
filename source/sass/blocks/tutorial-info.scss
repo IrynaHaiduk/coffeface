@@ -1,0 +1,34 @@
+.tutorial-info {
+  min-height: 569px;
+  height: auto;
+  padding-top: 64px;
+  //padding-bottom: 80px;
+  background: $white url("../img/tutorial-info-bg-mb.jpg") no-repeat center;
+  background-size: cover;
+
+  /*   @include onTablet {
+    min-height: 850px;
+    background-image: url("../img/tutorial-info-bg-tb.jpg");
+  } */
+
+  @include onDesktop {
+    background-image: url("../img/tutorial-info-bg-dt.jpg");
+    min-height: 740px;
+    padding-top: 274px;
+    /* padding-top: 64px; */
+  }
+}
+
+.tutorial-info__text {
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  @include onDesktop {
+    font-size: 60px;
+    line-height: 72px;
+    color: $white;
+  }
+}

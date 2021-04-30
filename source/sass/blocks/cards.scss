@@ -1,0 +1,28 @@
+.cards__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 337px;
+  margin: 0 auto;
+
+  @include onTablet {
+    width: 272px;
+  }
+
+  @include onDesktop {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.cards__item {
+  width: 32px;
+  height: 21px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: box-shadow $duration;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $brown;
+  }
+}
