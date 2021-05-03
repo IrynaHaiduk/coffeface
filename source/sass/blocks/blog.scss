@@ -22,15 +22,10 @@
 }
 
 .blog__wrapper {
-  /*   margin-left: 20px; */
   margin-bottom: 8px;
   overflow: auto;
   display: flex;
   align-items: center;
-
-  @include onTablet {
-    /*   margin-left: 40px; */
-  }
 
   @include onDesktop {
     overflow: initial;

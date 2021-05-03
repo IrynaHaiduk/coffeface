@@ -13,15 +13,6 @@
   }
 }
 
-.footer-nav__list {
-  @include onTablet {
-    /*   width: 50%; */
-    /*  &:last-of-type {
-      text-align: right;
-    } */
-  }
-}
-
 .footer-nav__link {
   font-size: 15px;
   font-weight: 400;

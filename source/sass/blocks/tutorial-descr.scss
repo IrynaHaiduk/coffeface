@@ -15,7 +15,6 @@
     background-image: url("../img/tutorial-descr-bg-dt.png");
     min-height: 533px;
     padding-top: 125px;
-    /* padding-top: 64px; */
   }
 }
 
@@ -35,8 +34,6 @@
 }
 
 .tutorial-descr__list {
-  /*   margin: 0 auto; */
-
   @include onTablet {
     display: flex;
     justify-content: space-around;
