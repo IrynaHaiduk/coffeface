@@ -1,16 +1,26 @@
 .subscription {
-  min-height: 886px;
-  height: auto;
+  background-image: url("../img/subscr-bg1-mb.png"), url("../img/subscr-bg2-mb.png");
+  background-size: 375px 401px, 100% 886px;
+  background-repeat: no-repeat;
+  background-position: center bottom, center center;
   padding-top: 53px;
   padding-bottom: 430px;
-  background: $peachy-pink url("../img/subscr-bg-mb.jpg") no-repeat center;
-  background-size: cover;
+  min-height: 886px;
 
   @include onDesktop {
-    background-image: url("../img/subscr-bg-dt.jpg");
+    background-image: url("../img/subscr-bg1-dt.png"), url("../img/subscr-bg2-dt.png");
+    background-size: 501px 559px, 100% 568px;
+    background-repeat: no-repeat;
+    background-position: right bottom, center center;
+    min-height: 886px;
     min-height: 568px;
     padding-top: 104px;
     padding-bottom: 136px;
+
+    /*  background-image: url("../img/subscr-bg-dt.jpg");
+    min-height: 568px;
+    padding-top: 104px;
+    padding-bottom: 136px; */
   }
 }
 

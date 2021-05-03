@@ -1,0 +1,130 @@
+.blog {
+  background-image: url("../img/blog-bg1-mb.jpg"), url("../img/blog-bg2-mb.png");
+  background-size: 335px 159px, 100% 367px;
+  background-repeat: no-repeat;
+  background-position: center top, center 80px;
+  min-height: 447px;
+  padding-top: 218px;
+
+  @include onTablet {
+    background-size: 500px auto, 100% 440px;
+    min-height: 600px;
+    padding-top: 260px;
+  }
+
+  @include onDesktop {
+    background-image: url("../img/blog-bg1-dt.jpg"), url("../img/blog-bg2-dt.png");
+    background-size: 874px 416px, 100% 700px;
+    background-position: center top, center 168px;
+    min-height: 868px;
+    padding-top: 518px;
+  }
+}
+
+.blog__wrapper {
+  /*   margin-left: 20px; */
+  margin-bottom: 8px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+
+  @include onTablet {
+    /*   margin-left: 40px; */
+  }
+
+  @include onDesktop {
+    overflow: initial;
+  }
+}
+
+.blog__list {
+  width: 854px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 278px);
+  gap: 10px;
+
+  @include onDesktop {
+    grid-template-columns: repeat(3, 427px);
+    width: 1321px;
+    gap: 20px;
+  }
+}
+
+.blog__title {
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $white;
+  margin-bottom: 28px;
+
+  @include onTablet {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 54px;
+  }
+}
+
+.blog__item {
+  width: 278px;
+
+  @include onDesktop {
+    width: 427px;
+  }
+}
+
+.blog__img {
+  margin-bottom: 13px;
+
+  @include onDesktop {
+    width: 427px;
+    height: 299px;
+    margin-bottom: 22px;
+  }
+}
+
+.blog__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+
+  @include onDesktop {
+    font-size: 18px;
+    line-height: 29px;
+  }
+}
+
+.blog__partners {
+  margin: 0 auto;
+  margin-bottom: 7px;
+  width: 734px;
+  height: 107px;
+  max-width: initial;
+
+  @include onDesktop {
+    width: 1320px;
+    height: 190px;
+    margin-bottom: 59px;
+  }
+}
+
+.blog__box {
+  min-width: 20px;
+  height: 20px;
+
+  @include onTablet {
+    min-width: 40px;
+  }
+
+  @include onDesktop {
+    min-width: 0;
+    height: 0;
+  }
+}

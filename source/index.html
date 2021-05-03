@@ -13,7 +13,8 @@
     <title>Coffeface</title>
     <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
     <link rel="stylesheet" href="./css/style.min.css" />
-  </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    </head>
 
   <body>
     <header class="page-header">
@@ -23,27 +24,7 @@
         </div>
       </div>
       <div class="page-header__wrapper container">
-        <nav class="page-header__main-nav main-nav main-nav--closed">
-          <button class="main-nav__toggle" type="button">Menu</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link"> Home </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#"> Shop </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#"> About </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#"> What is Coffeeface </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#"> Contact </a>
-            </li>
-          </ul>
-        </nav>
-
+        <button class="page-header__open-btn js-page-header__open-btn" type="button">Menu</button>
         <div class="page-header__logo logo">
           <a class="logo__link">
             <svg role="img" class="logo__icon" width="122" height="12">
@@ -51,11 +32,37 @@
             </svg>
           </a>
         </div>
+        <nav class="page-header__main-nav main-nav js-main-nav">
+            <div class="main-nav__container container">
+            <svg role="img" class="main-nav__close-btn js-main-nav__close-btn" width="20" height="20">
+              <use xlink:href="./img/sprite.svg#icon-close"></use>
+            </svg>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link" href="#"> Home </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#"> Shop </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#"> About </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#"> What is Coffeeface </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
 
         <ul class="page-header__user-list user-list">
           <li class="user-list__item">
             <a class="user-list__search search" aria-label="search">
-              <img src="./img/search.png" width="16" height="16" alt="search" />
+              <img src="./img/search.png" width="16" height="14" alt="search" />
               <!--  <svg role="img" class="search__icon" width="16" height="16">
                 <use xlink:href="./img/sprite.svg#icon-search"></use>
               </svg> -->
@@ -63,9 +70,9 @@
           </li>
           <li class="user-list__item">
             <a class="user-list__basket basket" aria-label="basket">
-              <span class="basket__count">3</span>
-              <img src="./img/basket.png" width="12" height="14" alt="search" />
-              <!--   <svg role="img" class="basket__icon" width="12" height="14">
+              <!-- <span class="basket__count">3</span> -->
+              <img src="./img/basket.png" width="17" height="19" alt="basket" />
+             <!--    <svg role="img" class="basket__icon" width="12" height="14">
                 <use xlink:href="./img/sprite.svg#icon-basket"></use>
               </svg> -->
             </a>
@@ -249,6 +256,234 @@
         </div>
 
       </section>
+
+      <section class="page-main__testimonials testimonials">
+        <div class="testimonials__container container">
+          <h2 class="testimonials__title">
+            Testimonials
+          </h2>
+        </div>
+        <div class="testimonials__slider">
+          <div class="splide">
+
+          	<div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">
+              </button>
+              <button class="splide__arrow splide__arrow--next">
+              </button>
+            </div>
+
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="testimonials__info">
+                    <picture>
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="./img/testimonials-tb.jpg"
+                      />
+                      <img
+                        class="testimonials__img"
+                        src="./img/testimonials-mb.jpg"
+                        width="61"
+                        heigh="61"
+                        alt="testimonial"
+                      />
+                    </picture>
+                    <h3 class="testimonials__subtitle">
+                      Anna K.
+                    </h3>
+                    <p class="testimonials__text">
+                      The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="testimonials__info">
+                    <picture>
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="./img/testimonials-tb.jpg"
+                      />
+                      <img
+                        class="testimonials__img"
+                        src="./img/testimonials-mb.jpg"
+                        width="61"
+                        heigh="61"
+                        alt="testimonial"
+                      />
+                    </picture>
+                    <h3 class="testimonials__subtitle">
+                      Anna K.
+                    </h3>
+                    <p class="testimonials__text">
+                      The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="testimonials__info">
+                    <picture>
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="./img/testimonials-tb.jpg"
+                      />
+                      <img
+                        class="testimonials__img"
+                        src="./img/testimonials-mb.jpg"
+                        width="61"
+                        heigh="61"
+                        alt="testimonial"
+                      />
+                    </picture>
+                    <h3 class="testimonials__subtitle">
+                      Anna K.
+                    </h3>
+                    <p class="testimonials__text">
+                      The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="testimonials__info">
+                    <picture>
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="./img/testimonials-tb.jpg"
+                      />
+                      <img
+                        class="testimonials__img"
+                        src="./img/testimonials-mb.jpg"
+                        width="61"
+                        heigh="61"
+                        alt="testimonial"
+                      />
+                    </picture>
+                    <h3 class="testimonials__subtitle">
+                      Anna K.
+                    </h3>
+                    <p class="testimonials__text">
+                      The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="testimonials__info">
+                    <picture>
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="./img/testimonials-tb.jpg"
+                      />
+                      <img
+                        class="testimonials__img"
+                        src="./img/testimonials-mb.jpg"
+                        width="61"
+                        heigh="61"
+                        alt="testimonial"
+                      />
+                    </picture>
+                    <h3 class="testimonials__subtitle">
+                      Anna K.
+                    </h3>
+                    <p class="testimonials__text">
+                      The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="testimonials__info">
+                    <picture>
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="./img/testimonials-tb.jpg"
+                      />
+                      <img
+                        class="testimonials__img"
+                        src="./img/testimonials-mb.jpg"
+                        width="61"
+                        heigh="61"
+                        alt="testimonial"
+                      />
+                    </picture>
+                    <h3 class="testimonials__subtitle">
+                      Anna K.
+                    </h3>
+                    <p class="testimonials__text">
+                      The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="page-main__blog blog">
+        <div class="blog__container container">
+          <h2 class="blog__title">
+            Blog
+          </h2>
+        </div>
+      <div class="blog__wrapper">
+<div class="blog__box"></div>
+
+          <ul class="blog__list">
+            <li class="blog__item">
+              <img
+                class="blog__img"
+                src="./img/blog-1-dt.jpg"
+                width="278"
+                heigh="195"
+                alt="blog"
+              />
+              <p class="blog__text">
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
+              </p>
+            </li>
+            <li class="blog__item">
+              <img
+                class="blog__img"
+                src="./img/blog-2-dt.jpg"
+                width="278"
+                heigh="195"
+                alt="blog"
+              />
+              <p class="blog__text">
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
+              </p>
+            </li>
+            <li class="blog__item">
+              <img
+                class="blog__img"
+                src="./img/blog-3-dt.jpg"
+                width="278"
+                heigh="195"
+                alt="blog"
+              />
+              <p class="blog__text">
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
+              </p>
+            </li>
+          </ul>
+          <div class="blog__box"></div>
+        </div>
+        <div class="blog__wrapper">
+          <div class="blog__box"></div>
+          <img
+            class="blog__partners"
+            src="./img/blog-partners.png"
+            width="734"
+            heigh="107"
+            alt="partners"
+          />
+          <div class="blog__box"></div>
+        </div>
+
+      </section>
+
+
       <section class="page-main__subscription subscription">
         <div class="subscription__container container">
           <div class="subscription__wrapper">
@@ -422,11 +657,11 @@
               width="13"
               height="13"
             >
-              <use xlink:href="./img/sprite.svg#icon-insta"></use>
+              <use xlink:href="./img/sprite.svg#icon-insta-grey"></use>
             </svg>
            </a>
            <p class="carousel__text">
-             Join us on instagram for new products, great giveaways and more!
+             <span>Join us </span>on instagram for new products, great giveaways and more!
            </p>
       </div>
     </div>
@@ -597,6 +832,9 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script> -->
 
     <script src="js/picturefill.js"></script>
     <script src="js/picture.js"></script>

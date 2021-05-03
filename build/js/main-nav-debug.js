@@ -1,14 +1,31 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+'use strict';
 
-navMain.classList.remove('main-nav--nojs');
+const menu = document.querySelector('.js-main-nav');
+const menuOpen = document.querySelector('.js-page-header__open-btn');
+const menuClose = document.querySelector('.js-main-nav__close-btn');
 
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
+menuOpen.addEventListener('click', function () {
+  showMenu();
+});
+
+menuClose.addEventListener('click', function () {
+  hideMenu();
+});
+
+menu.addEventListener('click', (e) => {
+  const link = e.target.closest('.user-list__item');
+
+  if (link) {
+    hideMenu();
   }
 });
+
+function hideMenu() {
+  /*  menu.style.transform = 'translateY(-100%)'; */
+  menu.style.display = 'none';
+}
+
+function showMenu() {
+  /*  menu.style.transform = 'translateY(0)'; */
+  menu.style.display = 'block';
+}

@@ -3,21 +3,23 @@
   height: auto;
   padding-top: 384px;
   padding-bottom: 80px;
-  background: $white url("../img/promo-bg-mb.jpg") no-repeat center;
-  background-size: cover;
+  background: $peachy-pink url("../img/promo-bg1-mb.png") no-repeat center bottom;
+  background-size: 375px auto;
 
   @include onTablet {
-    background-image: url("../img/promo-bg-tb.jpg");
+    background: $peachy-pink;
     min-height: 880px;
-    padding-top: 279px;
-    /* padding-top: 64px; */
+    padding-top: 300px;
+    padding-bottom: 0;
   }
 
   @include onDesktop {
+    background-image: url("../img/promo-bg1-dt.png"), url("../img/promo-bg2-dt.png");
+    background-size: 880px 775px, 100% 880px;
+    background-repeat: no-repeat;
+    background-position: left bottom, center center;
     padding-top: 279px;
-    background-image: url("../img/promo-bg-dt.jpg");
     min-height: 880px;
-    /* padding-top: 64px; */
   }
 }
 
@@ -36,7 +38,6 @@
   line-height: 39px;
   letter-spacing: 0em;
   text-align: center;
-
   margin-bottom: 10px;
 
   @include onTablet {
@@ -63,26 +64,4 @@
     margin-bottom: 35px;
     width: 388px;
   }
-}
-
-.promo__button {
-  /*  display: block;
-  width: 335px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: $white;
-  margin: 0 auto;
-  background-color: $black;
-  padding: 16px;
-  padding-bottom: 17px;
-
-  @include onDesktop {
-    width: 316px;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 23px;
-  } */
 }

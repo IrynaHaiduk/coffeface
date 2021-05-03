@@ -1,0 +1,132 @@
+.testimonials {
+  padding-top: 57px;
+  padding-bottom: 143px;
+}
+
+.testimonials__title {
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 28px;
+
+  @include onTablet {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+.testimonials__subtitle {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  margin-bottom: 11px;
+
+  @include onTablet {
+    font-size: 22px;
+    line-height: 37px;
+  }
+}
+
+.testimonials__img {
+  margin: 0 auto;
+  width: 61px;
+  height: 61px;
+
+  @include onTablet {
+    width: 86px;
+    height: 86px;
+  }
+}
+
+.testimonials__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  @include onTablet {
+    font-size: 18px;
+    line-height: 31px;
+  }
+}
+
+.testimonials__slider {
+  margin: 0 auto;
+  width: 335px;
+
+  .splide__arrow {
+    width: 52px;
+    height: 38px;
+    background: transparent url("../img/icon-testimonials-arrow-mb.svg") no-repeat center;
+    background-size: 48px 32px;
+    z-index: 5;
+    top: 30px;
+    border: none;
+
+    @include onTablet {
+      top: 45px;
+    }
+
+    @include onDesktop {
+      width: 70px;
+      height: 50px;
+      background-image: url("../img/icon-testimonials-arrow-dt.svg");
+      background-size: 66px 43px;
+
+      &:hover {
+        background-image: url("../img/testimonials-arrow-hover.png");
+
+        .splide__arrow--prev {
+          transform: translateY(-50%) rotate(0);
+        }
+
+        .splide__arrow--next {
+          transform: translateY(-50%) rotate(0);
+        }
+      }
+    }
+  }
+
+  .splide__arrow--next {
+    transform: translateY(-50%) rotate(180deg);
+
+    @include onDesktop {
+      &:hover {
+        transform: translateY(-50%) rotate(0);
+      }
+    }
+  }
+
+  .splide__arrow--prev {
+    left: 0;
+
+    @include onDesktop {
+      left: 410px;
+      &:hover {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+
+  .splide__arrow--next {
+    right: 0;
+
+    @include onDesktop {
+      right: 410px;
+    }
+  }
+
+  @include onTablet {
+    width: 500px;
+  }
+
+  @include onDesktop {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}

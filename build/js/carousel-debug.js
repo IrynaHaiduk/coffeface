@@ -50,4 +50,98 @@ $(document).ready(function () {
 
     ]
   });
+
+  new Splide('.splide', {
+    type: 'loop',
+    pagination: false,
+    focus: 'center',
+    perPage: 3,
+    width: '1440px',
+    gap: '132px',
+    fixedWidth: '650px',
+    start: 1,
+
+    breakpoints: {
+      768: {
+        width: '335px',
+        fixedWidth: '335px',
+        focus: 'center',
+        perPage: 1,
+        gap: 0,
+        start: 0,
+
+      },
+
+      1440: {
+        width: '500px',
+        fixedWidth: '500px',
+        focus: 'center',
+        perPage: 1,
+        gap: 0,
+        start: 0,
+      }
+    }
+
+
+
+    /*  breakpoints: {
+       1440: {
+         /* perPage: 3,
+         start: 2,
+
+         width: '650px',
+         gap: 132,
+         focus: 'center',
+
+         start: 2,
+         width: '400px',
+         focus: 'center',
+         perPage: 1,
+         pagination: false,
+         gap: 0,
+       },
+       768: {
+
+         start: 1,
+         width: '335px',
+         focus: 'center',
+         perPage: 1,
+         pagination: false,
+
+       },
+     } */
+
+  }).mount();
+
+
+
+
+
+
+
+
+
+  //   new Glider(document.querySelector('.glider'), {
+  //     slidesToScroll: 1,
+  //     slidesToShow: 1,
+  //     draggable: true,
+  //     rewind: true,
+  //     itemWidth: 335,
+
+  //     arrows: {
+  //       prev: '.glider-prev',
+  //       next: '.glider-next'
+  //     },
+  //     responsive: [{
+  //       // screens greater than >= 1440px
+  //       breakpoint: 1440,
+  //       settings: {
+  //         // Set to `auto` and provide item width to adjust to viewport
+  //         slidesToShow: '3',
+  //         slidesToScroll: '1',
+  //         itemWidth: 650,
+  //         duration: 0.25
+  //       }
+  //     }]
+  //   });
 });

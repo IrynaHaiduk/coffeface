@@ -88,3 +88,55 @@
     margin-bottom: 64px;
   }
 }
+
+.carousel__icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  fill: $grey;
+  transition: fill $duration;
+
+  &:hover {
+    fill: $black;
+  }
+
+  @include onDesktop {
+    margin: 0;
+  }
+}
+
+.carousel__text {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 258px;
+  margin: 0 auto;
+
+  span {
+    text-transform: uppercase;
+  }
+
+  @include onTablet {
+    font-size: 14px;
+    line-height: 18px;
+    width: 60%;
+  }
+
+  @include onDesktop {
+    width: auto;
+  }
+}
+
+.carousel__socials {
+  @include onDesktop {
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.testimonials__slider {
+}

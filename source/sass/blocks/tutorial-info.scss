@@ -1,21 +1,16 @@
 .tutorial-info {
+  background-image: url("../img/tutorial-info-bg1-mb.png"), url("../img/tutorial-info-bg2-mb.png");
+  background-size: 375px 328px, 100% 880px;
+  background-repeat: no-repeat;
+  background-position: center bottom, center center;
   min-height: 569px;
-  height: auto;
   padding-top: 64px;
-  //padding-bottom: 80px;
-  background: $white url("../img/tutorial-info-bg-mb.jpg") no-repeat center;
-  background-size: cover;
-
-  /*   @include onTablet {
-    min-height: 850px;
-    background-image: url("../img/tutorial-info-bg-tb.jpg");
-  } */
 
   @include onDesktop {
-    background-image: url("../img/tutorial-info-bg-dt.jpg");
+    background: $peachy-pink url("../img/tutorial-info-bg-dt.jpg") no-repeat center center;
+    background-size: cover;
     min-height: 740px;
     padding-top: 274px;
-    /* padding-top: 64px; */
   }
 }
 

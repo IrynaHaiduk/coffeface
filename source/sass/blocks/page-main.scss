@@ -4,3 +4,11 @@
   justify-content: flex-start;
   align-items: stretch;
 }
+
+.page-main__promo {
+  margin-top: -30px;
+
+  @include onDesktop {
+    margin-top: -123px;
+  }
+}
